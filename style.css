@@ -1,0 +1,15 @@
+	
+	#paragraph1 {font-size:24px;}
+		.important {color:#FF0000;}
+		#Paragraph1 {font-style:;}
+		title {font-weight: lighter;}
+		p {font-size: 14px; color: green;}
+		body {font-family:"Georgia", "timesnewroman", "times", "serif"; border:2px solid}
+		h1 {font-size: 26px; font-weight: normal}
+		#main_paragraph {color: #CCFF00;}
+		a {font-style: italic;}
+		a:link {color:#990000; text-decoration:none;}
+		a:visited {color: #990000; text-decoration:none}
+		a:hover {text-decoration:underline; color:blue;}
+		p:first-letter {font-size:26px;}
+		
