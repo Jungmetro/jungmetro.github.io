@@ -3,6 +3,32 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css"></style>
 	<title>Shane Varga.</title>
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Specalized XC COMP May 29th-30th, 2020', 500, 550, 1500, 1450],
+      ['2x CCM Nitro May 31st- June 2nd, 2020', 55, 150, 460, 450],
+      ['Raleigh Ambush June 2nd-3rd', 55, 65, 150, 200],
+      ['Thu', 77, 77, 66, 50],
+      ['Fri', 68, 66, 22, 15]
+      // Treat first row as data as well.
+    ], true);
+
+    var options = {
+      legend:'none'
+    };
+
+    var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+  }
+    </script>
+
 </head>
 <body>
 <font></font>
@@ -12,6 +38,9 @@
 <p class="important" id= main_paragraph>This is  how far I have come in 21 Years</p>
 
 <p> Check out what i've been working on over the <span class = important> years </span></p>
+
+ <div id="chart_div" style="width: 900px; height: 500px;"></div>
+
 </body>
 
 
